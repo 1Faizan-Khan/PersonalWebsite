@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: personal-website
+    env: dotnet
+    buildCommand: dotnet publish -c Release -o ./publish
+    startCommand: dotnet PersonalWebsite.dll
+    buildFilter:
+      paths:
+        - "**/*"
+    plan: free
