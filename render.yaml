@@ -2,7 +2,7 @@ services:
   - type: web
     name: personalwebsite
     buildCommand: dotnet publish -c Release -o ./publish
-    startCommand: dotnet PersonalWebsite.dll
+    startCommand: dotnet ./publish/PersonalWebsite.dll
     buildFilter:
       paths:
         - "**/*"
