@@ -6,9 +6,9 @@ EXPOSE 80
 # Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY . .
 
-# Specify the project file explicitly
+# Copy everything and publish
+COPY . .
 RUN dotnet publish PersonalWebsite.csproj -c Release -o /app/publish
 
 # Final stage
