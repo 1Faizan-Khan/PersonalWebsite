@@ -9,10 +9,10 @@ WORKDIR /src
 COPY . .
 
 # Specify the project file explicitly
-RUN dotnet publish faizankhan.csproj -c Release -o /app/publish
+RUN dotnet publish PersonalWebsite.csproj -c Release -o /app/publish
 
 # Final stage
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "faizankhan.dll"]
+ENTRYPOINT ["dotnet", "PersonalWebsite.dll"]
