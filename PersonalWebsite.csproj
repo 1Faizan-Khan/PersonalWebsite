@@ -5,7 +5,4 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-  <ItemGroup>
-  <Content Include="wwwroot\**" CopyToPublishDirectory="PreserveNewest" />
-</ItemGroup>
 </Project>
