@@ -15,4 +15,4 @@ RUN dotnet publish faizankhan.csproj -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "PersonalWebsite.dll"]
+ENTRYPOINT ["dotnet", "faizankhan.dll"]
