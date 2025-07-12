@@ -19,11 +19,18 @@ html {
 
 body {
   background-color: black !important;
-  display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically */
-  height: 100vh;             /* 100% of viewport height */
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: flex-start;   /* default to top alignment */
+  padding: 20px 0;           /* optional vertical padding */
+}
+
+@media (min-width: 768px) {
+  body {
+    align-items: center;     /* vertical center on desktop */
+  }
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
