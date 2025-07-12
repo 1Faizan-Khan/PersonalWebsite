@@ -1,69 +1,41 @@
-﻿<main class="container center" style="height: 600px; width: 1000px;">
-  <div class="row">
+﻿<main class="container center" style="height: 600px; max-width: 1000px;">
+    <div class="row">
 
-    <div class="col-4">
-      <img
-        class="img-fluid imgshake button"
-        style="cursor:pointer; margin-top: -20px;"
-        src="/Images/profilepicture.jpg"
-        alt="Profile picture"
-      />
-    </div>
-
-    <div class="col-8">
-
-      <h1 style="color: white; font-weight: bold; font-size: 80px;">Faizan Khan</h1>
-      <h2 style="color: #D3D3D3; font-weight: bold; font-size: 40px;">CS & Cybersecurity @@ NEIU</h2>
-      <p style="color: #D3D3D3; font-size: 20px; margin-top: 50px;">
-        Avid builder & Learner. Peer leading at NEIU.
-      </p>
-
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex flex-column gap-3">
-
-            <!-- First line: Work, Projects, Resume links inline -->
-            <div class="d-flex justify-content-start gap-3 flex-wrap">
-              <a class="button" asp-action="Work">Work</a>
-              <a class="button" asp-action="Projects">Projects</a>
-              <a href="/Files/Resume.pdf" target="_blank" class="button">Resume</a>
-            </div>
-
-            <!-- Second line: GitHub, LinkedIn, Mail icons inline -->
-            <div class="d-flex justify-content-start gap-3 flex-wrap">
-              <a href="https://github.com/1Faizan-Khan?tab=repositories" target="_blank">
-                <img
-                  class="img-fluid icon"
-                  style="height: 50px; width: 50px;"
-                  src="/Images/github.png"
-                  alt="GIT"
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/faizan-khan-90189424b/" target="_blank">
-                <img
-                  class="img-fluid icon"
-                  style="height: 50px; width: 50px;"
-                  src="/Images/linkedin.png"
-                  alt="LinkedIn"
-                />
-              </a>
-              <a href="mailto:faizank8877@gmail.com" target="_blank">
-                <img
-                  class="img-fluid icon"
-                  style="height: 50px; width: 50px;"
-                  src="/Images/mail.png"
-                  alt="Email"
-                />
-              </a>
-            </div>
-
-          </div>
+        <div class="col-12 col-md-4">
+            <img class="img-fluid imgshake button" style="cursor:pointer; margin-top: -20px;" src="/Images/profilepicture.jpg" alt="Profile picture"/>
         </div>
-      </div>
+
+        <div class="col-12 col-md-8">
+
+            <h1 style="color: white; font-weight: bold; font-size: 80px;">Faizan Khan</h1>
+            <h2 style="color: #D3D3D3; font-weight: bold; font-size: 40px;">CS & Cybersecurity @@ NEIU</h2>
+            <p style="color: #D3D3D3; font-size: 20px; margin-top: 50px;">Avid builder & Learner. Peer leading at NEIU.</p>
+
+            <!-- Links: Work, Projects, Resume -->
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3 mb-3">
+                <a class="button" asp-action="Work">Work</a>
+                <a class="button" asp-action="Projects">Projects</a>
+                <a href="/Files/Resume.pdf" target="_blank" class="button">Resume</a>
+            </div>
+
+            <!-- Icons: GitHub, LinkedIn, Mail -->
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3 align-items-center">
+                <a href="https://github.com/1Faizan-Khan?tab=repositories" target="_blank">
+                    <img class="img-fluid icon" style="height: 50px; width: 50px;" src="/Images/github.png" alt="GIT"/>
+                </a>
+
+                <a href="https://www.linkedin.com/in/faizan-khan-90189424b/" target="_blank">
+                    <img class="img-fluid icon" style="width: 50px; height: 50px;" src="/Images/linkedin.png" alt="LinkedIn"/>
+                </a>
+
+                <a href="mailto:faizank8877@gmail.com" target="_blank">
+                    <img class="img-fluid icon" style="width: 50px; height: 50px;" src="/Images/mail.png" alt="Mail"/>
+                </a>
+            </div>
+
+        </div>
 
     </div>
-
-  </div>
 </main>
 
 <script>
