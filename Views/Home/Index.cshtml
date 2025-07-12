@@ -1,43 +1,77 @@
-﻿<main class="container center py-5">
-    <div class="row align-items-center">
+﻿<main class="container center" style="height: 600px; width: 1000px;">
+  <div class="row">
 
-        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-            <img class="img-fluid imgshake button" style="cursor:pointer; margin-top: -20px;" src="/Images/profilepicture.jpg" alt="Profile picture" />
-        </div>
+    <div class="col-4">
+      <img
+        class="img-fluid imgshake button"
+        style="cursor:pointer; margin-top: -20px;"
+        src="/Images/profilepicture.jpg"
+        alt="Profile picture"
+      />
+    </div>
 
-        <div class="col-12 col-md-8 text-center text-md-start">
-            <h1 class="fw-bold" style="color: white; font-size: 4rem;">Faizan Khan</h1>
-            <h2 class="fw-bold" style="color: #D3D3D3; font-size: 2rem;">CS & Cybersecurity @@ NEIU</h2>
-            <p class="mt-4" style="color: #D3D3D3; font-size: 1.25rem;">Avid builder & Learner. Peer leading at NEIU.</p>
+    <div class="col-8">
 
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start mt-3 gap-3">
-                <a class="button" asp-action="Work">Work</a>
-                <a class="button" asp-action="Projects">Projects</a>
-                <a href="/Files/Resume.pdf" target="_blank" class="button">Resume</a>
+      <h1 style="color: white; font-weight: bold; font-size: 80px;">Faizan Khan</h1>
+      <h2 style="color: #D3D3D3; font-weight: bold; font-size: 40px;">CS & Cybersecurity @@ NEIU</h2>
+      <p style="color: #D3D3D3; font-size: 20px; margin-top: 50px;">
+        Avid builder & Learner. Peer leading at NEIU.
+      </p>
 
-                <a href="https://github.com/1Faizan-Khan?tab=repositories" target="_blank">
-                    <img class="img-fluid icon" style="height: 50px; width: 50px;" src="/Images/github.png" alt="GIT" />
-                </a>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-column gap-3">
 
-                <a href="https://www.linkedin.com/in/faizan-khan-90189424b/" target="_blank">
-                    <img class="img-fluid icon" style="height: 50px; width: 50px;" src="/Images/linkedin.png" alt="LinkedIn" />
-                </a>
-
-                <a href="mailto:faizank8877@gmail.com" target="_blank">
-                    <img class="img-fluid icon" style="height: 50px; width: 50px;" src="/Images/mail.png" alt="Email" />
-                </a>
+            <!-- First line: Work, Projects, Resume links inline -->
+            <div class="d-flex justify-content-start gap-3 flex-wrap">
+              <a class="button" asp-action="Work">Work</a>
+              <a class="button" asp-action="Projects">Projects</a>
+              <a href="/Files/Resume.pdf" target="_blank" class="button">Resume</a>
             </div>
+
+            <!-- Second line: GitHub, LinkedIn, Mail icons inline -->
+            <div class="d-flex justify-content-start gap-3 flex-wrap">
+              <a href="https://github.com/1Faizan-Khan?tab=repositories" target="_blank">
+                <img
+                  class="img-fluid icon"
+                  style="height: 50px; width: 50px;"
+                  src="/Images/github.png"
+                  alt="GIT"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/faizan-khan-90189424b/" target="_blank">
+                <img
+                  class="img-fluid icon"
+                  style="height: 50px; width: 50px;"
+                  src="/Images/linkedin.png"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="mailto:faizank8877@gmail.com" target="_blank">
+                <img
+                  class="img-fluid icon"
+                  style="height: 50px; width: 50px;"
+                  src="/Images/mail.png"
+                  alt="Email"
+                />
+              </a>
+            </div>
+
+          </div>
         </div>
+      </div>
 
     </div>
+
+  </div>
 </main>
 
 <script>
-    document.querySelectorAll('.imgshake').forEach(img => {
-        img.addEventListener('click', () => {
-            img.classList.remove('shake'); // Reset if already animating
-            void img.offsetWidth; // Force reflow to restart animation
-            img.classList.add('shake');
-        });
+  document.querySelectorAll('.imgshake').forEach(img => {
+    img.addEventListener('click', () => {
+      img.classList.remove('shake'); // Reset if already animating
+      void img.offsetWidth; // Force reflow to restart animation
+      img.classList.add('shake');
     });
+  });
 </script>
