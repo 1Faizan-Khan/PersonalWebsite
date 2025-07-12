@@ -1,64 +1,47 @@
-<h1 style="color: white; margin-left: 250px; font-weight: bold; font-size: 48px; margin-bottom: 30px;">Work</h1>
+<h1 class="text-white fw-bold mb-4 text-center text-md-start" style="font-size: 48px;">Work</h1>
 
-<main class="container" style="height: 900px; width: 800px;">
-    <div class="row">
+<main class="container">
+    <div class="d-flex flex-column gap-5">
 
-            <div class="row" style="margin-bottom: 20px;">
-                <div class="col-2">
-                    <img class="img-fluid icon" style = "margin-left: 10px; height: 50px; width: 50px;" src="/Images/NEIU-logo.jpg" alt="GIT"/>
+        <!-- Work Experience -->
+        <div class="d-flex flex-column flex-md-row align-items-start gap-3">
+            <img class="img-fluid" src="/Images/NEIU-logo.jpg" alt="NEIU Logo" style="height: 50px; width: 50px;" />
+            <div class="flex-grow-1">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <h2 class="text-white" style="font-size: 30px;">Peer leader at NEIU</h2>
+                    <p class="text-white mb-0">January 2025 - Current</p>
                 </div>
-                <div class="col-6">
-                    <h2 style="color: white; font-size: 30px;">Peer leader at NEIU</h2>
-                </div>
-                <div class="col-4">
-                    <p style="color: white;">January 2025-Current</p>
-                </div>
+                <p class="text-white mt-2" style="font-size: 20px;">
+                    Conducted workshops for college students on "Object-Oriented Programming and Data Structures" utilizing lectures and programming examples, while demonstrating leadership skills.
+                </p>
             </div>
-
-            <div class="row">
-            <p style="color: white; font-size: 20px;">Conducted workshops for college students on "Object-Oriented Programming and Data Structures" utilizing lectures and programming examples, while demonstrating leadership skills.</p>
-
-            </div>
-
-            
-    </div>
-
-        <div class="row">
-            <h3 style="font-weight:bold; font-size: 48px; color: white; margin-bottom: 30px;">Scholarships & Awards:</h3>
         </div>
 
-            <div class="row" style="margin-bottom: 20px;">
-                <div class="col-2">
-                    <img class="img-fluid icon" style = "margin-left: 10px; height: 50px; width: 50px;" src="/Images/NEIU-logo.jpg" alt="GIT"/>
-                </div>
-                <div class="col-6">
-                    <h2 style="color: white; font-size: 30px;">Presidential Scholarship</h2>
-                </div>
-                <div class="col-4">
-                    <p style="color: white; font-size: 20px;">August 2023</p>
-                </div>
-            </div>
-        
-            
-        
+        <!-- Scholarships & Awards Title -->
+        <h3 class="fw-bold" style="font-size: 48px; color: white; margin-bottom: 30px;">Scholarships &amp; Awards:</h3>
 
-            <div class="row" style="margin-bottom: 20px;">
-                <div class="col-2">
-                    <img class="img-fluid icon" style = "margin-left: 10px; height: 50px; width: 50px;" src="/Images/Honors.png" alt="GIT"/>
-                </div>
-                <div class="col-6">
-                    <h2 style="color: white; font-size: 30px;">Honors Program Member</h2>
-                </div>
-                <div class="col-4">
-                    <p style="color: white; font-size: 20px;">August 2023</p>
-                </div>
+        <!-- Presidential Scholarship -->
+        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+            <img class="img-fluid" src="/Images/NEIU-logo.jpg" alt="NEIU Logo" style="height: 50px; width: 50px;" />
+            <div class="flex-grow-1 d-flex justify-content-between flex-wrap align-items-center">
+                <h2 class="text-white mb-0" style="font-size: 30px;">Presidential Scholarship</h2>
+                <p class="text-white mb-0" style="font-size: 20px;">August 2023</p>
             </div>
-            
+        </div>
+
+        <!-- Honors Program Member -->
+        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+            <img class="img-fluid" src="/Images/Honors.png" alt="Honors Icon" style="height: 50px; width: 50px;" />
+            <div class="flex-grow-1 d-flex justify-content-between flex-wrap align-items-center">
+                <h2 class="text-white mb-0" style="font-size: 30px;">Honors Program Member</h2>
+                <p class="text-white mb-0" style="font-size: 20px;">August 2023</p>
+            </div>
+        </div>
+
+        <!-- Homepage Button -->
         <div>
-            <a asp-action="Index" class="button" style="color: white; font-weight: bold; font-size: 30px;">Homepage</a>
+            <a asp-action="Index" class="button text-white fw-bold" style="font-size: 30px;">Homepage</a>
         </div>
 
     </div>
-
 </main>
-
